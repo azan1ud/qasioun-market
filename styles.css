@@ -677,6 +677,91 @@ a:hover { color: var(--accent-light); }
   color: var(--text-muted);
 }
 
+/* ---------- Smart Features ---------- */
+.smart-features {
+  background: var(--bg-primary);
+}
+
+.smart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.smart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  transition: all var(--transition);
+}
+
+.smart-card:hover {
+  border-color: rgba(46, 204, 113, 0.25);
+  transform: translateY(-3px);
+}
+
+.smart-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(46, 204, 113, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.smart-icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+}
+
+.smart-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.smart-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.smart-flow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  padding: 5px 12px;
+  background: rgba(46, 204, 113, 0.08);
+  border: 1px solid rgba(46, 204, 113, 0.15);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.flow-arrow {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .smart-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .smart-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
