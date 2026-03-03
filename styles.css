@@ -556,12 +556,18 @@ a:hover { color: var(--accent-light); }
 .offer-img {
   aspect-ratio: 1;
   overflow: hidden;
+  background: var(--bg-card);
 }
 
-.offer-img .placeholder-img {
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px dashed var(--border-light);
+.offer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.offer-card:hover .offer-img img {
+  transform: scale(1.05);
 }
 
 .offer-info {
