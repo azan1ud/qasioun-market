@@ -470,10 +470,15 @@ a:hover { color: var(--accent-light); }
   overflow: hidden;
 }
 
-.category-img .placeholder-img {
-  border-radius: 0;
-  border: none;
-  border-bottom: 1px dashed var(--border-light);
+.category-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.category-card:hover .category-img img {
+  transform: scale(1.05);
 }
 
 .category-info {
